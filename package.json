@@ -4,9 +4,18 @@
   "description": "A command-line tool to generate your own 'link' 'tree' website.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "esbuild ./src/main --bundle --outfile=dist/linktreat.js --platform=node",
+    "linktreat": "node dist/linktreat"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^16.10.2",
+    "esbuild": "^0.13.3",
+    "fs-extra": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13"
+  }
 }
