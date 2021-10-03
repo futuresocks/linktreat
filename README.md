@@ -31,7 +31,7 @@ index.css created at dist/index.css
   "name": "Futuresocks",
   "links": [
     { "title": "Github", "url": "https://github.com/futuresocks" },
-    { "title": "Github", "url": "https://github.com/futuresocks" }
+    { "title": "Twitter", "url": "https://twitter.com/colinbell" }
   ]
 }
 ```
