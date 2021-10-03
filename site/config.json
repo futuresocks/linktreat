@@ -1,10 +1,32 @@
 {
     "profilePicture": "./profile-pic.jpeg",
     "name": "Colin Bell",
-    "links": [
-      {"title": "Github", "url": "https://github.com/futuresocks" }, 
-      {"title": "Dungeon Fun", "url": "https://uk.bookshop.org/books/dungeon-fun/9781910775226"}, 
-      {"title": "Roo Bell Makeup", "url": "https://www.roobellmakeup.com/"},
-      {"title": "Pac-Man: The Text Adventure", "url": "https://condescending-murdock-812ce5.netlify.app/"}
-    ]
+    "description": "Comics, coding, bon vivant. Situation: developing.",
+    "sections": [{
+      "heading": "I make comics",
+      "links": [
+        {"title": "Dungeon Fun", "url": "https://uk.bookshop.org/books/dungeon-fun/9781910775226"},  
+        {"title": "2000AD Regened", "url": "https://shop.2000ad.com/catalogue/GRN681"},
+        {"title": "Doctor Who", "url": "https://tardis.fandom.com/wiki/Category:12D_backup_comic_stories"},
+        {"title": "Comics I've lettered", "url": "https://comicvine.gamespot.com/colin-bell/4040-75018/issues-cover/"}
+      ]
+    },
+    {
+      "heading": "I write code",
+      "links": [
+        {"title": "Linktreat", "url": "https://github.com/futuresocks/linktreat"},  
+        {"title": "Roo Bell Makeup", "url": "https://roobellmakeup.com"},
+        {"title": "Pac-Man: RPG", "url": "https://pac-man-the-text-adventure.netlify.app/"},
+        {"title": "Arnold Clark", "url": "https://arnoldclark.com/"}
+      ]
+    },  
+    {
+      "heading": "I'm around the internet",
+      "links": [
+        {"title": "Instagram", "url": "https://instagram.com/futuresocks"},  
+        {"title": "Github", "url": "https://github.com/futuresocks"},
+        {"title": "Twitter", "url": "https://twitter.com/colinbell"},
+        {"title": "LinkedIn", "url": "https://www.linkedin.com/in/colinjbell"}
+      ]
+    }] 
   }
