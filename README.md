@@ -29,9 +29,15 @@ index.css created at dist/index.css
 {
   "profilePicture": "./assets/pic.png",
   "name": "Futuresocks",
-  "links": [
-    { "title": "Github", "url": "https://github.com/futuresocks" },
-    { "title": "Twitter", "url": "https://twitter.com/colinbell" }
+  "description": "A brief intro about you",
+  "sections": [
+    {
+      "heading": "Where to find me",
+      "links": [
+        { "title": "Github", "url": "https://github.com/futuresocks" },
+        { "title": "Twitter", "url": "https://twitter.com/colinbell" }
+      ]
+    }
   ]
 }
 ```
