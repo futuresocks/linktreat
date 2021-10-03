@@ -1,13 +1,14 @@
-
-
 type Config = {
     profilePicture: string,
     name: string,
-    links: {
-        title: string,
-        url: string,
-    }[]
-}
+    description: string,
+    sections: {
+        heading: string,
+        links: {
+            title: string,
+            url: string}[]
+        }[]
+    }
 
 type FileData = {
     name: string,
@@ -29,7 +30,14 @@ export const generateLinktreat = (config: Config): FileData[] => {
       <div class="container">
         <img class="profile-picture" src="${config.profilePicture}"/>
         <div class="name">${config.name}</div>
-        ${config.links.map(({title, url}) => `<a class="link" href=${url}>${title}</a>`).join('')}
+        <span class="description">${config.description}</span>
+        ${config.sections.map((section) => {
+            return [
+            `<div class="section">
+              <p class="section-heading">${section.heading}</p>`,
+            `${section.links.map(({title, url}) => `<a class="link" href=${url}>${title}</a>`).join('\n')}`,
+            `</div>`].join('\n')}).join('\n')
+        }
       </div>
     </div>
   </body>
@@ -37,15 +45,22 @@ export const generateLinktreat = (config: Config): FileData[] => {
 `
 }, 
 {
-        name: 'index.css', 
-        content: 
-`body {
+    name: 'index.css', 
+    content: `
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Open+Sans&display=swap');
+
+body {
   margin: 0;
 }
           
 html {
   color: white;
   font-size: 21px;
+  font-family: 'Contrail One', cursive;
+}
+
+html, body {
+    overscroll-behavior: none;
 }
           
 .background {
@@ -63,14 +78,21 @@ html {
   margin: 0 auto;
   padding: 2rem;
 }
+
+.description {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
           
 .link {
   color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8rem;
   text-decoration: none;
   display: block;
   text-align: center;
-  width: 100%;
   border: 2px solid white;
+  border-radius: 2rem;
   margin-bottom: 1rem;
   padding: 0.5rem;
   transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s,
@@ -79,6 +101,12 @@ html {
   transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s,
   background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
 }
+
+@media screen and (min-width: 480px) {
+    .link {
+      font-size: 1rem;
+    }
+  }
           
 .link:hover {
   background-color: white;
@@ -86,13 +114,26 @@ html {
 }
           
 .name {
-  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-size: 2.5rem;
 }
           
 .profile-picture {
   border-radius: 100%;
   width: 5rem;
   margin-bottom: 1rem;
-}`
+}
+
+.section {
+  width: 100%;
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+`
 }];
 }
