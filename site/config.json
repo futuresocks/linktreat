@@ -1,0 +1,10 @@
+{
+    "profilePicture": "./profile-pic.jpeg",
+    "name": "Colin Bell",
+    "links": [
+      {"title": "Github", "url": "https://github.com/futuresocks" }, 
+      {"title": "Dungeon Fun", "url": "https://uk.bookshop.org/books/dungeon-fun/9781910775226"}, 
+      {"title": "Roo Bell Makeup", "url": "https://www.roobellmakeup.com/"},
+      {"title": "Pac-Man: The Text Adventure", "url": "https://condescending-murdock-812ce5.netlify.app/"}
+    ]
+  }
