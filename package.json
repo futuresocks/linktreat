@@ -1,0 +1,12 @@
+{
+  "name": "linktreat",
+  "version": "1.0.0",
+  "description": "A command-line tool to generate your own 'link' 'tree' website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
