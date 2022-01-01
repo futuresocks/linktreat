@@ -2,7 +2,7 @@
 
 I built a command-line tool to generate a sort of "link" "tree" looking static site, leaning heavily on [this](https://www.youtube.com/watch?v=91-MV2m0YlA) tutorial. And now I use it to power [colinbell.dev](https://colinbell.dev)
 
-## Usage
+### Usage
 
 If running for the first time, or if you make any changes to the generate process:
 
@@ -23,7 +23,7 @@ index.css created at dist/index.css
 
 ```
 
-## Configuration
+### Configuration
 
 ```json
 {
