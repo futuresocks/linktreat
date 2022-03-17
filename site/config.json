@@ -13,11 +13,17 @@
       ]
     },
     {
+      "heading": "I make games", 
+      "links": [  
+        {"title": "Pac-Man: RPG", "url": "https://futuresocks.itch.io/pac-man-the-text-adventure"},
+        {"title": "Jaws: The Video Game", "url": "https://futuresocks.itch.io/jaws"}
+        ]
+      },
+    {
       "heading": "I write code",
       "links": [
         {"title": "Linktreat", "url": "https://github.com/futuresocks/linktreat"},  
-        {"title": "Roo Bell Makeup", "url": "https://roobellmakeup.com"},
-        {"title": "Pac-Man: RPG", "url": "https://pac-man-the-text-adventure.netlify.app/"}
+        {"title": "Roo Bell Makeup", "url": "https://roobellmakeup.com"}
       ]
     },  
     {
